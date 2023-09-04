@@ -1,0 +1,11 @@
+[package]
+name = "ztf_tarball_reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+apache-avro = { version = "0.14.0", features = ["derive"] }
+serde = "1.0.188"
+serde_bytes = "0.11.12"
