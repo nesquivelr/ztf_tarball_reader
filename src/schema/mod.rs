@@ -104,7 +104,7 @@ pub struct Candidate {
     pub maggaiabright: Option<f32>,
     pub exptime: Option<f32>,
     pub drb: Option<f32>,
-    pub drbversion: String,
+    pub drbversion: Option<String>, //This is not optional in the original schema but sometimes it's not there
 }
 
 #[derive(Deserialize)]
