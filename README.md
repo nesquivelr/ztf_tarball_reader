@@ -5,14 +5,15 @@ With this tools someone can know which alert was sent in one night and can also 
 
 ## Usage
 
-Clone this repository and use the `ztf_tarball_reader` binary with a directory to read from. To create a directory
+Clone this repository, then execute the binary with a directory to read from. To create a directory
 with alerts, download a file from https://ztf.uw.edu/alerts/public/ and unzip it into the `data` folder.
 Some alert may have problems loading due to some schema errors.
 
 ### Read a directory
 ```bash
-./ztf_tarball_reader data/ztf_tmp/
+cargo run --release data/ztf_tmp/
 ```
+
 ### Show all alerts after reading a directory
 ```bash
 >> show all
